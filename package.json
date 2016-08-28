@@ -6,8 +6,9 @@
 		"node": ">=6.0.0"
 	},
 	"scripts": {
-		"build": "npm run build:src && npm run build:esnext && npm run build:regular",
+		"build": "npm run build:src && npm run build:src-vector3 && npm run build:esnext && npm run build:regular",
 		"build:src": "rollup --config ./rollup.import-src.js || true",
+		"build:src-vector3": "rollup --config ./rollup.import-src-vector3.js || true",
 		"build:esnext": "rollup --config ./rollup.import-build-esnext.js || true",
 		"build:regular": "rollup --config ./rollup.import-build-regular.js || true"
 	},

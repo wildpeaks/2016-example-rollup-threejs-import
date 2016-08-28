@@ -20,9 +20,11 @@
 !/application.import-build-esnext.js
 !/application.import-build-regular.js
 !/application.import-src.js
+!/application.import-src-vector3.js
 !/rollup.import-build-esnext.js
 !/rollup.import-build-regular.js
 !/rollup.import-src.js
+!/rollup.import-src-vector3.js
 !/threejs
 !/dist
 
