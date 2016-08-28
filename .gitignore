@@ -24,6 +24,7 @@
 !/rollup.import-build-regular.js
 !/rollup.import-src.js
 !/threejs
+!/dist
 
 
 #-----------------------------------------------------------------------------#
