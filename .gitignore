@@ -1,0 +1,33 @@
+
+#-----------------------------------------------------------------------------#
+# Ignore everything by default:
+#-----------------------------------------------------------------------------#
+
+/*
+/*/
+
+
+#-----------------------------------------------------------------------------#
+# But allow those files and folders:
+#-----------------------------------------------------------------------------#
+
+!/.editorconfig
+!/.eslintrc.json
+!/.gitattributes
+!/.gitignore
+!/LICENSE
+!/package.json
+!/application.import-build-esnext.js
+!/application.import-build-regular.js
+!/application.import-src.js
+!/rollup.import-build-esnext.js
+!/rollup.import-build-regular.js
+!/rollup.import-src.js
+!/threejs
+
+
+#-----------------------------------------------------------------------------#
+# But make sure to ignore those regardless:
+#-----------------------------------------------------------------------------#
+
+.DS_Store
