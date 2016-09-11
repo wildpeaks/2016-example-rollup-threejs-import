@@ -6,10 +6,11 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "build": "npm run build:src && npm run build:src-vector3 && npm run build:esnext && npm run build:regular",
+    "build": "npm run build:src && npm run build:src-vector3 && npm run build:src-box2 && npm run build:src-box2-modified && npm run build:esnext && npm run build:regular",
     "build:src": "rollup --config ./rollup.import-src.js || true",
     "build:src-vector3": "rollup --config ./rollup.import-src-vector3.js || true",
     "build:src-box2": "rollup --config ./rollup.import-src-box2.js || true",
+    "build:src-box2-modified": "rollup --config ./rollup.import-src-box2-modified.js || true",
     "build:esnext": "rollup --config ./rollup.import-build-esnext.js || true",
     "build:regular": "rollup --config ./rollup.import-build-regular.js || true"
   },
