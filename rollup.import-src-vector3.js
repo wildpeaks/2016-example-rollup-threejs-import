@@ -1,28 +1,8 @@
 import babel from 'rollup-plugin-babel';
 
-
-// Duplicated from https://github.com/mrdoob/three.js/blob/dev/rollup.config.js
-function glsl(){
-	return {
-		transform(code, id){
-			if (!/\.glsl$/.test(id)){
-				return;
-			}
-			return 'export default ' + JSON.stringify(
-				code
-				.replace(/[ \t]*\/\/.*\n/g, '')
-				.replace(/[ \t]*\/\*[\s\S]*?\*\//g, '')
-				.replace(/\n{2,}/g, '\n')
-			) + ';';
-		}
-	};
-}
-
-
 export default {
 	entry: './application.import-src-vector3.js',
 	plugins: [
-		glsl(),
 		babel({
 			compact: true,
 			presets: [
