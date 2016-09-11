@@ -1,21 +1,22 @@
 {
-	"private": true,
-	"name": "example",
-	"description": "Compares three shaking of Three.js bundles and src when used in a ES Modules app built with Rollup",
-	"engines": {
-		"node": ">=6.0.0"
-	},
-	"scripts": {
-		"build": "npm run build:src && npm run build:src-vector3 && npm run build:esnext && npm run build:regular",
-		"build:src": "rollup --config ./rollup.import-src.js || true",
-		"build:src-vector3": "rollup --config ./rollup.import-src-vector3.js || true",
-		"build:esnext": "rollup --config ./rollup.import-build-esnext.js || true",
-		"build:regular": "rollup --config ./rollup.import-build-regular.js || true"
-	},
-	"devDependencies": {
-		"babel-eslint": "^6.1.2",
-		"babel-preset-es2015": "^6.14.0",
-		"rollup": "rollup/rollup#rewrite",
-		"rollup-plugin-babel": "^2.6.1"
-	}
+  "private": true,
+  "name": "example",
+  "description": "Compares three shaking of Three.js bundles and src when used in a ES Modules app built with Rollup",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "build": "npm run build:src && npm run build:src-vector3 && npm run build:esnext && npm run build:regular",
+    "build:src": "rollup --config ./rollup.import-src.js || true",
+    "build:src-vector3": "rollup --config ./rollup.import-src-vector3.js || true",
+    "build:src-box2": "rollup --config ./rollup.import-src-box2.js || true",
+    "build:esnext": "rollup --config ./rollup.import-build-esnext.js || true",
+    "build:regular": "rollup --config ./rollup.import-build-regular.js || true"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.14.0",
+    "rollup": "^0.35.7",
+    "rollup-plugin-babel": "^2.6.1"
+  }
 }
